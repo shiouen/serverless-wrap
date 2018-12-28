@@ -3,3 +3,6 @@
 
 # Node.js & npm
 node_modules
+
+# project
+src/*.js

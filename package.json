@@ -2,15 +2,13 @@
   "name": "node-serverless",
   "version": "0.0.0",
   "description": "A tiny serverless alternative for Node.js, which executes the serverless command",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/shiouen/node-serverless.git"
   },
   "author": "Olivier Van Aken <olivier.va@outlook.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/shiouen/node-serverless/issues"
-  },
   "homepage": "https://github.com/shiouen/node-serverless#readme",
   "keywords": [
     "serverless",
@@ -19,8 +17,22 @@
     "npm",
     "node-serverless"
   ],
+  "bugs": {
+    "url": "https://github.com/shiouen/node-serverless/issues"
+  },
+  "files": [
+    "src/index.js"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
   "dependencies": {
     "node-npx": "^1.3.1",
     "serverless": "^1.35.1"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "typescript": "^3.2.2"
   }
 }
