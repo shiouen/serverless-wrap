@@ -1,6 +1,6 @@
 {
   "name": "serverless-wrap",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A tiny wrap around serverless, which executes the serverless command",
   "main": "src/index.js",
   "repository": {
@@ -30,7 +30,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "npx-wrap": "0.0.3",
+    "npx-wrap": "0.0.5",
     "serverless": "^1.35.1"
   },
   "devDependencies": {
