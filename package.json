@@ -14,10 +14,11 @@
     "serverless",
     "wrap",
     "serverless-wrap",
-    "node",
-    "spawn",
+    "npm",
     "npx",
-    "npm"
+    "gulp",
+    "node",
+    "spawn"
   ],
   "bugs": {
     "url": "https://github.com/shiouen/serverless-wrap/issues"
