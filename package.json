@@ -1,0 +1,15 @@
+{
+  "name": "node-serverless",
+  "version": "0.0.0",
+  "description": "A tiny serverless alternative for Node.js, which executes the serverless command",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shiouen/node-serverless.git"
+  },
+  "author": "Olivier Van Aken <olivier.va@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shiouen/node-serverless/issues"
+  },
+  "homepage": "https://github.com/shiouen/node-serverless#readme"
+}
