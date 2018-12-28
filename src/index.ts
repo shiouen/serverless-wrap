@@ -8,5 +8,5 @@ export async function invoke(command: string, args: string[]): Promise<any> {
     await npx.async('serverless', [command, ...args]);
 }
 
-export default invoke;
 export const serverless = { deploy, invoke };
+export default serverless;

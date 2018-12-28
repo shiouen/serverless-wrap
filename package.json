@@ -1,6 +1,6 @@
 {
   "name": "serverless-wrap",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "A tiny wrap around serverless, which executes the serverless command",
   "main": "src/index.js",
   "repository": {
@@ -14,10 +14,11 @@
     "serverless",
     "wrap",
     "serverless-wrap",
-    "node",
-    "spawn",
+    "npm",
     "npx",
-    "npm"
+    "gulp",
+    "node",
+    "spawn"
   ],
   "bugs": {
     "url": "https://github.com/shiouen/serverless-wrap/issues"
@@ -26,10 +27,11 @@
     "src/index.js"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "npx-wrap": "0.0.2",
+    "npx-wrap": "0.0.5",
     "serverless": "^1.35.1"
   },
   "devDependencies": {
