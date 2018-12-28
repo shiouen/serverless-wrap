@@ -1,14 +1,12 @@
 import npx from 'npx-wrap';
 
-async function deploy (args: string[]): Promise<any> {
-    await serverless('deploy', args);
+export async function deploy(args: string[]): Promise<any> {
+    await invoke('deploy', args);
 }
 
-async function serverless (command: string, args: string[]): Promise<any> {
-    await npx.async(command, args);
+export async function invoke(command: string, args: string[]): Promise<any> {
+    await npx.async('serverless', [command, ...args]);
 }
 
-export default {
-    deploy,
-    serverless
-}
+export default invoke;
+export const serverless = { deploy, invoke };
