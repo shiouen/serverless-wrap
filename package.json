@@ -26,10 +26,11 @@
     "src/index.js"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "npx-wrap": "0.0.2",
+    "npx-wrap": "0.0.3",
     "serverless": "^1.35.1"
   },
   "devDependencies": {
