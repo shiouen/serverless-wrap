@@ -1,6 +1,6 @@
 {
   "name": "node-serverless",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A tiny serverless alternative for Node.js, which executes the serverless command",
   "main": "src/index.js",
   "repository": {
@@ -24,8 +24,7 @@
     "src/index.js"
   ],
   "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "build": "tsc"
   },
   "dependencies": {
     "node-npx": "^1.3.1",
