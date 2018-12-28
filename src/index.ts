@@ -1,19 +1,14 @@
-import npx from 'node-npx';
+import npx from 'npx-wrap';
 
-export const serverless = async (command: string, args: string[]): Promise<any> => {
-    return new Promise(((resolve, reject) => {
-        args.unshift(command);
+async function deploy (args: string[]): Promise<any> {
+    await serverless('deploy', args);
+}
 
-        const child = npx('serverless', args, {
-            stdio: 'inherit'
-        });
+async function serverless (command: string, args: string[]): Promise<any> {
+    await npx.async(command, args);
+}
 
-        child.on('exit', (code: number) => {
-            code === 0 ? resolve() : reject();
-        });
-    }));
-};
-
-export const deploy = async (options: string[]): Promise<any> => {
-    return serverless('deploy', options);
-};
+export default {
+    deploy,
+    serverless
+}

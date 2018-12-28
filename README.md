@@ -1,2 +1,2 @@
-# node-serverless
-A tiny serverless alternative for Node.js, which executes the serverless command
+# serverless-wrap
+A tiny wrap around serverless, which executes the serverless command
