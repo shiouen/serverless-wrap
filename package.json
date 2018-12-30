@@ -18,7 +18,11 @@
     "npx",
     "gulp",
     "node",
-    "spawn"
+    "spawn",
+    "promise",
+    "async",
+    "deploy",
+    "invoke"
   ],
   "bugs": {
     "url": "https://github.com/shiouen/serverless-wrap/issues"
