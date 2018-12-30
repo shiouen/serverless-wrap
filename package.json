@@ -2,7 +2,7 @@
   "name": "serverless-wrap",
   "version": "1.0.0",
   "description": "A tiny wrap around serverless, which executes the serverless command",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/shiouen/serverless-wrap.git"
@@ -28,7 +28,7 @@
     "url": "https://github.com/shiouen/serverless-wrap/issues"
   },
   "files": [
-    "src/index.js"
+    "dist/**/*"
   ],
   "scripts": {
     "build": "tsc",
