@@ -1,6 +1,6 @@
 {
   "name": "serverless-wrap",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A tiny wrap around serverless, which executes the serverless command",
   "main": "dist/src/index.js",
   "repository": {
