@@ -2,7 +2,7 @@
   "name": "serverless-wrap",
   "version": "1.0.0",
   "description": "A tiny wrap around serverless, which executes the serverless command",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/shiouen/serverless-wrap.git"
@@ -28,18 +28,24 @@
     "url": "https://github.com/shiouen/serverless-wrap/issues"
   },
   "files": [
-    "dist/**/*"
+    "dist/src/**/*"
   ],
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "test": "mocha -r ts-node/register --ui exports test/**/*spec.ts"
   },
   "dependencies": {
     "npx-wrap": "0.0.5",
     "serverless": "^1.35.1"
   },
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
     "@types/node": "^10.12.18",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
     "typescript": "^3.2.2"
   }
 }
