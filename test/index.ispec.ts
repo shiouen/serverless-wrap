@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 
 import sls from '../src/index';
-import { serverless } from '../src/index';
-import { deploy, invoke } from '../src/index';
+import { serverless } from '../src/';
+import { deploy, execute } from '../src/';
 
 export const exporting = {
     'the default export': {
@@ -12,8 +12,8 @@ export const exporting = {
         "should have 'deploy' defined": () => {
             expect(sls.deploy).to.be.ok;
         },
-        "should have 'invoke' defined": () => {
-            expect(sls.invoke).to.be.ok;
+        "should have 'execute' defined": () => {
+            expect(sls.execute).to.be.ok;
         }
     },
     'the single named constant export': {
@@ -23,8 +23,8 @@ export const exporting = {
         "should have 'deploy' defined": () => {
             expect(serverless.deploy).to.be.ok;
         },
-        "should have 'invoke' defined": () => {
-            expect(serverless.invoke).to.be.ok;
+        "should have 'execute' defined": () => {
+            expect(serverless.execute).to.be.ok;
         }
     },
     'the named method exports': {
@@ -33,9 +33,9 @@ export const exporting = {
                 expect(deploy).to.be.ok;
             }
         },
-        'invoke': {
+        'execute': {
             'should be defined': () => {
-                expect(invoke).to.be.ok;
+                expect(execute).to.be.ok;
             }
         }
     }
