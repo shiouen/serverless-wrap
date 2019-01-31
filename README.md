@@ -22,7 +22,7 @@ import serverless from 'serverless-wrap'
 import { serverless } from 'serverless-wrap';
 
 // multiple named imports
-import { deploy, invoke } from 'serverless-wrap';
+import { deploy, execute } from 'serverless-wrap';
 ```
 ### deploy
 ```js
@@ -35,8 +35,8 @@ const args = [
 await serverless.deploy(args);
 ```
 
-### invoke
-Used to invoke any serverless command.
+### execute
+Used to execute any serverless command.
 ```js
 const args = [
     '--region', 'eu-west-1',
@@ -44,7 +44,7 @@ const args = [
     '--verbose'
 ];
 
-await serverless.invoke('deploy', args);
+await serverless.execute('deploy', args);
 ```
 ### environment variables
 dotenv is supported; any environment variables are passed on to the serverless command.
