@@ -36,16 +36,16 @@
     "test": "mocha -r ts-node/register --ui exports test/**/*spec.ts"
   },
   "dependencies": {
-    "npx-wrap": "0.0.5",
+    "npx-wrap": "^1.0.0",
     "serverless": "^1.35.1"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.5",
-    "@types/node": "^10.12.18",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.12.29",
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
     "ts-node": "^7.0.1",
-    "typescript": "^3.2.2"
+    "typescript": "^3.3.3333"
   }
 }
